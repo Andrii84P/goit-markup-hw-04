@@ -35,6 +35,7 @@ ul {
 button {
   cursor: pointer;
 }
+
 img {
   display: block;
 }
@@ -46,18 +47,18 @@ body {
   color: var(--primary-color-text);
 }
 
-/* Header*/
-
-.header {
-  border-bottom: 1px solid #ececec;
-  justify-content: space-between;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+/* Header*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
 }
 
 .header .flex {
@@ -153,10 +154,19 @@ a {
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images-hw4/overlay.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -288,6 +298,7 @@ a {
 }
 
 .team-item {
+  display: block;
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc(100% / 4 - 30px);
@@ -310,7 +321,17 @@ a {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-color-text);
+  margin-bottom: 16px;
 }
+
+/* .social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: red;
+  outline: 1px solid blue;
+  border-radius: 50%;
+} */
 
 /* Footer */
 
