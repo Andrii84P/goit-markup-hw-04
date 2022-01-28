@@ -115,6 +115,7 @@ a {
 
 .header-item {
   display: flex;
+  align-content: center;
 }
 
 .header-item:last-child {
@@ -149,6 +150,18 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color-text);
+}
+
+.header-link.mailto,
+.header-link.tel {
+  display: flex;
+  align-items: center;
+}
+
+.header-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  background-repeat: no-repeat;
 }
 
 /* Hero */
@@ -230,6 +243,10 @@ a {
   display: flex;
 }
 
+.features-item {
+  width: 270px;
+}
+
 .features-item + .features-item {
   margin-left: 30px;
 }
@@ -241,8 +258,14 @@ a {
   color: var(--primary-color-text);
 }
 
-.features-item {
-  width: 270px;
+.features-overlay {
+  display: flex;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 /* Report */
@@ -304,6 +327,8 @@ a {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .officer-name {
@@ -324,14 +349,81 @@ a {
   margin-bottom: 16px;
 }
 
-/* .social-link {
-  display: block;
+.team-link {
+  display: flex;
   width: 44px;
   height: 44px;
-  background-color: red;
-  outline: 1px solid blue;
+  background-color: #ffffff;
   border-radius: 50%;
-} */
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.social-networking-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-networking-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-coolor);
+  color: #ffffff;
+}
+
+/* Regular-clients */
+
+.regular-clients {
+  padding-top: 52px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.regular-clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--titles-color-text);
+  margin-bottom: 50px;
+}
+
+.regular-clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.regular-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  min-width: 170px;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.brend-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-coolor);
+  color: var(--accent-coolor);
+}
 
 /* Footer */
 
@@ -340,6 +432,11 @@ a {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -395,7 +492,49 @@ a {
   color: var(--accent-coolor);
 }
 
-/*------- Portfolio css-------*/
+/*--Привсоединяйся--*/
+
+.join {
+  margin-left: 70px;
+}
+
+.join-title {
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-link:hover {
+  background-color: var(--accent-coolor);
+}
+
+.join-icon {
+  fill: currentColor;
+}
+
+/*------- Portfolio -------*/
 
 .projects-section {
   padding-top: 94px;
@@ -427,6 +566,8 @@ a {
 .project-button:focus {
   background-color: var(--accent-coolor);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-button {
@@ -452,6 +593,12 @@ a {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item-content {
