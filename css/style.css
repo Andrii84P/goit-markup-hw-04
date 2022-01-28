@@ -526,7 +526,8 @@ a {
   justify-content: center;
 }
 
-.join-link:hover {
+.join-link:hover,
+.join-link:focus {
   background-color: var(--accent-coolor);
 }
 
